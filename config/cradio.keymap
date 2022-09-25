@@ -90,7 +90,7 @@
 		
 		tri_layer {
 		bindings = <
-		&td HOME PG_UP &trans &trans  &trans  &kp LG(RCTRL(D))		&kp RALT(LEFT)   &kp LC(LS(TAB))   &kp LC(TAB) &kp LALT(RIGHT) &trans
+		&td HOME PG_UP &trans &trans  &trans  &kp LG(RCTRL(D))		&kp RA(LEFT)   &kp LC(LS(TAB))   &kp LC(TAB) &kp LA(RIGHT) &trans
 		&td LG(TAB) TAB &trans &trans &trans &kp LG(RCTRL(RIGHT))  		&kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp ENTER 
 		&td END PG_DN &trans  &trans &trans &kp LG(RCTRL(LEFT))				&trans &kp DEL  &kp INS  &trans &trans   
 					 &to 0 &kp LSHIFT           					&sk RALT &to 1 
