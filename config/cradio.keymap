@@ -18,26 +18,26 @@
 / { 
 
 	combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
+        	compatible = "zmk,combos";
+        	combo_esc {
+            		timeout-ms = <50>;
+            		key-positions = <0 1>;
+           		 bindings = <&kp ESC>;
+      		};
         
-         combo_tab {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp TAB>;
+         	combo_tab {
+           		timeout-ms = <50>;
+            		key-positions = <10 11>;
+            		bindings = <&kp TAB>;
+		};
 		combo_del {
 			timeout-ms = <50>;
 			key-positions = <8 9>;
 			bindings = <&kp DEL>;
-		}
-        };
+		};
 	};
 
-    behaviors {
+     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
