@@ -7,7 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/mouse.h>
+
 
 
 &mt {
@@ -94,10 +94,10 @@
 		
 		tri_layer {
 		bindings = <
-		&td HOME PG_UP &mwh SCROLL_LEFT  &mmv MOVE_UP  &mwh SCROLL_RIGHT  &kp LG(RCTRL(D))		&kp RALT(LEFT)   &kp LC(LS(TAB))   &kp LC(TAB) &kp LALT(RIGHT) &trans
-		&td LG(TAB) TAB &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp LG(RCTRL(RIGHT))  		&kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp ENTER 
-		&td END PG_DN &mkp RCLK  &mwh SCROLL_UP &mwh SCROLL_DOWN &kp LG(RCTRL(LEFT))				&mkp LCLK &kp DEL  &kp INS  &trans &trans   
-					 &to 0 &kp LSHIFTbg           					&sk RALT &to 1 
+		&td HOME PG_UP &trans &trans  &trans  &kp LG(RCTRL(D))		&kp RALT(LEFT)   &kp LC(LS(TAB))   &kp LC(TAB) &kp LALT(RIGHT) &trans
+		&td LG(TAB) TAB &trans &trans &trans &kp LG(RCTRL(RIGHT))  		&kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp ENTER 
+		&td END PG_DN &trans  &trans &trans &kp LG(RCTRL(LEFT))				&trans &kp DEL  &kp INS  &trans &trans   
+					 &to 0 &kp LSHIFT           					&sk RALT &to 1 
 		>;
 		};	
 		bt {
