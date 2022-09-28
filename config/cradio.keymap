@@ -39,11 +39,12 @@
             		timeout-ms = <50>;
             		key-positions = <8 9>;
            		 bindings = <&kp BKSP>;
+		};
 		combo_ret {
             		timeout-ms = <50>;
             		key-positions = <18 19>;
            		 bindings = <&kp ENTER>;
-
+		};
 	};
 
      behaviors {
