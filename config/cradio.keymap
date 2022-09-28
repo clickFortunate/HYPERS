@@ -35,6 +35,15 @@
 			key-positions = <8 9>;
 			bindings = <&kp DEL>;
 		};
+		combo_bksp {
+            		timeout-ms = <50>;
+            		key-positions = <8 9>;
+           		 bindings = <&kp BKSP>;
+		combo_ret {
+            		timeout-ms = <50>;
+            		key-positions = <18 19>;
+           		 bindings = <&kp ENTER>;
+
 	};
 
      behaviors {
@@ -63,19 +72,19 @@
                 
        		default_layer {
 		bindings = <
-		&kp Y &kp C &kp L &kp M &kp K 						&kp Z &kp F  &kp U    &td MINUS COMMA  &kp BKSP 
+		&kp Y &kp C &kp L &kp M &kp K 					&kp Z &kp F  &kp U &td MINUS COMMA  &kp BKSP 
 		&kp I &kp S &hm LALT R &hm LGUI T &kp G 			&kp P &hm RGUI N &hm RALT E &kp A &kp O
 		&kp Q &kp V &kp W &kp D &kp J				        &kp B &kp H  &td UNDERSCORE SLASH &td EXCL DOT &kp X
-          				&mt LC(LS(LALT)) SPC &sk LSHIFT  				&sk RCTRL &to 1
+          					&mt LC(LS(LALT)) SPC &sk LSHIFT  	&sk RCTRL &to 1
 		>;
 		};
 
        		left_layer {
 		bindings = <
 		&kp ESC  &kp ATSN   &td LG(LS(S)) HASH &kp DLLR    &kp PRCNT		&kp CARET &kp AMPS &kp STAR &kp SEMI &kp BKSP 
-		&kp TAB    &kp EQUAL    &kp LESS_THAN   &kp GREATER_THAN &kp SQT 		&kp BSLH &kp LBRC  &kp RBRC &kp PIPE  &kp ENTER
-		&kp TILDE    &kp PLUS 	&to 4 &kp QMARK  &kp DQT 	&kp LBKT &kp LPRN &kp RPRN &kp RBKT  &to 3 
-					    &to 0  &sk LSHIFT  					&sk RALT &to 2 
+		&kp TAB    &kp EQUAL    &kp LESS_THAN   &kp GREATER_THAN &kp SQT 	&kp BSLH &kp LBRC  &kp RBRC &kp PIPE  &kp ENTER
+		&kp TILDE    &kp PLUS 	&to 4 &kp QMARK  &kp DQT 			&kp LBKT &kp LPRN &kp RPRN &kp RBKT  &to 3 
+					    	&to 0  &sk LSHIFT  			&sk RALT &to 2 
 		>;
 		};
 		
@@ -83,17 +92,17 @@
 		bindings = <
 		&kp F10  &kp F7 &kp F8  &kp F9  &kp UNDERSCORE 			&kp MINUS  &kp N7  &kp N8  &kp N9 &trans
 		&kp F11  &kp F4 &kp F5  &kp F6  &td STAR PLUS 			&kp EQUAL  &kp N4  &kp N5  &kp N6   &kp ENTER
-		&kp F12  &kp F1 &kp F2  &kp F3  &kp DOT    				&kp N0	   &kp N1  &kp N2  &kp N3  &trans 
-						&to 0 &sk LGUI  						&sk RALT  &to 2  
+		&kp F12  &kp F1 &kp F2  &kp F3  &kp DOT    			&kp N0	   &kp N1  &kp N2  &kp N3  &to 3 
+						&to 0 &sk LGUI  		&sk RALT  &to 1  
 		>;
 		};
 		
 		tri_layer {
 		bindings = <
 		&td HOME PG_UP &trans &trans  &trans  &kp LG(RC(D))		&kp RA(LEFT)   &kp LC(LS(TAB))   &kp LC(TAB) &kp LA(RIGHT) &trans
-		&td LG(TAB) TAB &trans &trans &trans &kp LG(RC(RIGHT))  		&kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp ENTER 
-		&td END PG_DN &trans  &trans &trans &kp LG(RC(LEFT))				&trans &kp DEL  &kp INS  &trans &trans   
-					 &to 0 &kp LSHIFT           					&sk RALT &to 1 
+		&td LG(TAB) TAB &trans &trans &trans &kp LG(RC(RIGHT))  	&kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp ENTER 
+		&td END PG_DN &trans  &trans &trans &kp LG(RC(LEFT))		&trans &kp DEL  &kp INS  &trans &trans   
+					 		&to 0 &kp LSHIFT        &sk RALT &to 1 
 		>;
 		};	
 		bt {
