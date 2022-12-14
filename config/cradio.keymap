@@ -239,7 +239,7 @@
             tapping-term-ms = <200>;
 	    quick_tap_ms = <0>;
             flavor = "tap-preferred";
-	    bindings = <&kp SHIFT>, <&caps-word>;
+	    bindings = <&kp SHIFT>, <&caps_word>;
 
         };
 	
@@ -250,7 +250,7 @@
             tapping-term-ms = <200>;
 	    quick_tap_ms = <0>;
             flavor = "tap-preferred";
-	    bindings = <&key-repeat>, <&kp RCTRL>;
+	    bindings = <&key_repeat>, <&kp RCTRL>;
 
         };
      };
