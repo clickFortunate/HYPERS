@@ -27,7 +27,7 @@
         	combo_esc {
             		timeout-ms = <50>;
             		key-positions = <0 1>;
-           		bindings = <&kp ESC>;
+           		 bindings = <&kp ESC>;
       		};
         	
 		combo_at {
@@ -203,7 +203,6 @@
             		key-positions = <18 19>;
            		bindings = <&kp ENTER>;
 		};
-		
 		combo_bt {
 			timeout-ms = <50>;
 			key-positions = <30 31>;
@@ -230,8 +229,25 @@
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+	};
+
+	td0: tapdance {
+	    compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+	    bindings = <&kp LSHFT>, <&caps_word>;
+
         };
 	
+	td1: tapdance {
+	    compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+	    bindings = <&key_repeat>, <&kp RCTRL>;
+
+        };
      };
 
         keymap {
@@ -242,7 +258,7 @@
 		        &kp Y 	&kp C 	&kp L 	&kp M 	&kp K		&kp Z 	&kp F 	&kp U 	&kp COMMA &kp BKSP
 			&kp I 	&kp S 	&hm LALT R &hm LGUI T &kp G	&kp P 	&hm RGUI N &hm RALT E &kp A &kp O
 			&kp Q 	&kp V 	&kp W 	&kp D 	&kp J		&kp B 	&kp H 	&kp SLASH &kp DOT &kp X
-				&td SHIFT RCTRL &lt NUM SPACE		&mo NAV &key_repeat 
+			                  &td0 &lt NUM SPACE		&mo NAV &td1 
 		    >;
 		};
 
@@ -258,9 +274,9 @@
 		nav_layer {
 		    bindings = <
 			&kp F1 &kp F2 &kp F3 &kp F4 &kp F5		&kp PG_UP &kp HOME &kp LG(LS(S)) &none &trans
-			&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &sk RALT	&kp LEFT &kp UP &kp DOWN &kp RIGHT &none
+			&sk LALT &sk LGUI &sk LSHFT &sk LCTRL &sk RALT	&kp LEFT &kp UP &kp DOWN &kp RIGHT &none
 			&kp F6 &kp F7 &kp F8 &kp F9 &kp F10		&kp PG_DN &kp END &none &kp F11 &kp F12
-						&caps_word &kp SPACE	&none &none
+						&none &kp SPACE		&none &none
 		    >;
 		};
 		
