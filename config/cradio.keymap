@@ -27,7 +27,7 @@
         	combo_esc {
             		timeout-ms = <50>;
             		key-positions = <0 1>;
-           		 bindings = <&kp ESC>;
+           		bindings = <&kp ESC>;
       		};
         	
 		combo_at {
@@ -239,7 +239,7 @@
             tapping-term-ms = <200>;
 	    quick_tap_ms = <0>;
             flavor = "tap-preferred";
-	    bindings = <&key_repeat>, <&kp RCTRL>;
+	    bindings = <&kp L>, <&kp RCTRL>;
 
         };
      };
