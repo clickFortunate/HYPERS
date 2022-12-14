@@ -203,6 +203,7 @@
             		key-positions = <18 19>;
            		bindings = <&kp ENTER>;
 		};
+		
 		combo_bt {
 			timeout-ms = <50>;
 			key-positions = <30 31>;
@@ -236,6 +237,8 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
+	    quick_tap_ms = <0>;
+            flavor = "tap-preferred";
 	    bindings = <&kp SHIFT>, <&caps-word>;
 
         };
@@ -245,6 +248,8 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
+	    quick_tap_ms = <0>;
+            flavor = "tap-preferred";
 	    bindings = <&key-repeat>, <&kp RCTRL>;
 
         };
