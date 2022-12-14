@@ -27,7 +27,7 @@
         	combo_esc {
             		timeout-ms = <50>;
             		key-positions = <0 1>;
-           		 bindings = <&kp ESC>;
+           		bindings = <&kp ESC>;
       		};
         	
 		combo_at {
@@ -188,7 +188,7 @@
 		
 		combo_dqt {
 			timeout-ms = <50>;
-			key-postions = <8 18>;
+			key-positions = <8 18>;
 			bindings = <&kp DQT>;
 		};
 		
