@@ -236,6 +236,8 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
+	    quick_tap_ms = <0>;
+            flavor = "tap-preferred";
 	    bindings = <&kp LSHFT>, <&caps_word>;
 
         };
@@ -245,6 +247,8 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
+	    quick_tap_ms = <0>;
+            flavor = "tap-preferred";
 	    bindings = <&key_repeat>, <&kp RCTRL>;
 
         };
