@@ -79,7 +79,7 @@
            		bindings = <&sk LCTRL>;
 		};
 
-`		combo_lshft {
+		combo_lshft {
             		timeout-ms = <50>;
             		key-positions = <10 11>;
            		bindings = <&sk LSHFT>;
@@ -91,7 +91,7 @@
            		bindings = <&sk RCTRL>;
 		};
 
-`		combo_rshft {
+		combo_rshft {
             		timeout-ms = <50>;
             		key-positions = <18 19>;
            		bindings = <&sk RSHFT>;
