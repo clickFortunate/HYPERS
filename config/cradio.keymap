@@ -96,29 +96,46 @@
             		key-positions = <18 19>;
            		bindings = <&sk RSHFT>;
 		};
+
+		combo_clock {
+            		timeout-ms = <50>;
+            		key-positions = <21 22>;
+           		bindings = <&kp CAPSLOCK>;
+		};
 	};
 
-     behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-     };
+	behaviors {
+        	td0: tap_dance_0 {
+            	compatible = "zmk,behavior-tap-dance";
+            	#binding-cells = <0>;
+            	tapping-term-ms = <200>;
+            	bindings = <&mo SYM>, <&sk LGUI>;
+        	};
+
+		td1: tap_dance_1 {
+            	compatible = "zmk,behavior-tap-dance";
+            	#binding-cells = <0>;
+            	tapping-term-ms = <200>;
+            	bindings = <&mo NUM>, <&sk RALT>;
+        	};
+
+		td2: tap_dance_2 {
+            	compatible = "zmk,behavior-tap-dance";
+            	#binding-cells = <0>;
+            	tapping-term-ms = <200>;
+            	bindings = <&kp LC(V)>, <&kp LC(C)>, <&kp LC(X)>;
+        	};
+    	};
 
         keymap {
                 compatible = "zmk,keymap";
                 
        		base_layer {
 		    bindings = <
-		        &kp F 	&kp R 	&kp D 	&kp P 	&kp V		&kp Q 	&kp M 	&kp U 	&kp O &kp Y
-			&kp S 	&kp N 	&hm LALT T &hm LGUI C &kp B	&kp DOT	&hm RGUI H &hm RALT E &kp A &kp I
-			&kp Z	&kp X 	&kp K 	&kp G 	&kp W		&kp J 	&kp L 	&kp SEMI &kp SQT &kp COMMA
-			                  	&mo SYM	&lt NAV SPACE	&mo NUM &kp LG(LS(S)) 
+		        &kp F 	&kp R 	&kp D 	&kp P 	&kp V		&kp Q 	&kp M 	&kp U 	&kp O 	&kp Y
+			&kp S 	&kp N 	&kp T 	&kp C 	&kp B		&kp DOT	&kp H 	&kp E 	&kp A 	&kp I
+			&kp Z	&kp X 	&kp K 	&kp G	&kp W		&kp J 	&kp L 	&kp SEMI &kp SQT &kp COMMA
+			                  	&td0 	&lt NAV SPACE	&td1 	&td2
 		    >;
 		};
 
